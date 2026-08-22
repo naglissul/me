@@ -1,0 +1,6 @@
+{
+  "name": "naglissul-me",
+  "scripts": {
+    "start": "python3 server.py"
+  }
+}

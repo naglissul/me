@@ -1,0 +1,4 @@
+services:
+  pagal-programa:
+    image: ghcr.io/naglissul/me-i:latest
+    build: .

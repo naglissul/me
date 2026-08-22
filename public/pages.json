@@ -1,0 +1,12 @@
+[
+  { "slug": "index", "title": "Pradžia" },
+  {
+    "slug": "qc-csheet",
+    "title": "Quantum Computing Cheatsheet"
+  },
+  {
+    "slug": "qc-blog",
+    "title": "Quantum Computing Blog",
+    "recursive": "auto"
+  }
+]

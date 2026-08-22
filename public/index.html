@@ -1,19 +1,70 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
     <head>
-        <title>Naglis Šuliokas</title>
+        <title>Matematikos BUP patogiai | pagalprograma.lt</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta
+            name="description"
+            content="Matematikos BUP informacija, turinys, pasikeitimų sekimas"
+        />
+        <meta
+            name="keywords"
+            content="Bendroji ugdymo programa, matematika, BUP, formulynas"
+        />
+        <meta name="author" content="simtukas.lt" />
+
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css"
+        />
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"
+        ></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked@14/lib/marked.umd.js"></script>
+        <script defer src="script.js"></script>
+        <script
+            defer
+            src="https://analitika.simtukas.lt/script.js"
+            data-website-id="11465ce9-8a7b-4a8d-ba91-e20df6c98213"
+        ></script>
     </head>
+
     <body>
-        <h1>Naglis Šuliokas</h1>
-        <p>
-        <ul>
-            <li>CTO @ Šimtukas (<a href="https://www.simtukas.lt">simtukas.lt</a>)</li>
-            <li>Master Computer Science student @ VU/UvA</li>
-            <li><a>The Science Guild</a>'s main organizer</li>
-            <li>Creator and maintainer of <a href="https://www.vbesort.lt">vbesort.lt</a></li>
-        </ul>
-        </p>
-        <p>Read more on <a href="https://www.npw.lt">npw.lt</a></p>
-        <p>Contacts: naglis.suliokas@gmail.com, (no public phone number due to spam), have LinkedIn but not active, github naglissul.</p>
+        <header>
+            <div class="header-inner">
+                <a href="/" class="site-title"
+                    >pagalprograma.lt <sub>by Šimtukas</sub></a
+                >
+                <nav id="nav"></nav>
+                <button id="menu-toggle" aria-label="Meniu">&#9776;</button>
+            </div>
+        </header>
+
+        <div id="drawer">
+            <nav id="drawer-nav"></nav>
+        </div>
+        <div id="drawer-overlay"></div>
+
+        <main>
+            <section>
+                <div id="content"></div>
+            </section>
+        </main>
+
+        <footer>
+            Iškepė Naglis @ Šimtukas tech (<a href="mailto:tech@simtukas.lt"
+                >tech@simtukas.lt</a
+            >). Prisidėk:
+            <a href="https://github.com/skafis-edtech/pagal-programa">GitHub</a
+            >. Paskutinį kartą keista: <span id="last-updated">2026-06-24</span>
+        </footer>
     </body>
 </html>
