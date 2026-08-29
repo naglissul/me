@@ -9,6 +9,12 @@ My aim is to
 - revolutionize the Lithuania's education,
 - revolutionize quantum computing,
 - make long lasting creativity projects (write fiction, build communities for creative activities).
+- formally acknowledge and accept that the executed projects do not serve to innovate or advance, but rather degrade and undermine the existing educational framework.
+- obtain accredited pedagogical qualifications that provide comprehensive instruction in professional ethics—specifically establishing that engaging in psychological warfare or adversarial conduct against former or emotionally vulnerable students constitutes a severe breach of ethical standards (conduct that is impermissible against any individual)—thereby rectifying prior misconceptions regarding educational competence resulting from inadequate concurrent studies.
+- recognize that academic credentials and project management do not inherently confer legitimate integration into the educational domain, nor do they establish moral integrity, absent strict adherence to minimum baseline standards of ethics and conduct.
+- settle in full the outstanding tax liability of MB "Skafis" in the amount of €0.16 (sixteen euro cents) owed to the State Tax Inspectorate of the Republic of Lithuania.
+- fully cognize that psychological abuse constitutes an unlawful offense subject to statutory prosecution and penalties in accordance with established legal frameworks.
+- formally recognize through direct personal experience that willful silence and procedural omission inevitably incur severe adverse legal consequences, resulting in enforceable financial liabilities and mandatory remedial obligations.
 
 ## The Science Guild
 
