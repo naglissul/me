@@ -8,17 +8,15 @@
 My aim is to
 - revolutionize the Lithuania's education,
 - revolutionize quantum computing,
-- publish a bunch of fiction books.
+- make long lasting creativity projects (write fiction, build communities for creative activities).
 
 ## The Science Guild
 
 I organize monthly student meet-ups, to do 30 minute mini lectures on topics from various fields - mathematics, computer science, biology, chemistry, medicine, literature etc. Consider joining! We are open to everyone (as long as you are somewhat following the scientific paradigm in your presentation). Read more here: [thescienceguild.org](https://www.thescienceguild.org).
 
-## Quantum Computing Blog and Cheatsheet
+## "Get that PhD" blog
 
-Since I want to get more into experimental quantum computing, I need to really master the theory of it. Also, there are not som many popularized sources to learn QC, as there are, for example, for mathematics. Because of that, I am writing a tutorial in blog format, summarizing the most important things in a cheatsheet. You can read them here:
-- [Quantum Computing Blog](/qc-blog)
-- [Quantum Computing Cheatsheet](/qc-csheet)
+I want to get into a PhD program for experimental quantum computing. However, my academic and work background mostly goes around computer science, so I need to catch up a lot. But I still want to keep up with all the other activities. Long story short - there's a lot of things going on and it's hard to keep track of everything. That's why I am making this blog. You can read it [here](qc-blog).
 
 ## Šimtukas
 
