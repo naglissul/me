@@ -1,12 +1,20 @@
 [
-  { "slug": "index", "title": "Pradžia" },
-  {
-    "slug": "qc-csheet",
-    "title": "Quantum Computing Cheatsheet"
-  },
+  { "slug": "index", "title": "Home | Naglis Šuliokas" },
+  {"slug": "portfolio", "title": "Portfolio | Naglis Šuliokas"},
+  {"slug": "archive", "title": "Archive | Naglis Šuliokas"},
   {
     "slug": "qc-blog",
-    "title": "Quantum Computing Blog",
-    "recursive": "auto"
+    "title": "Blog | Naglis Šuliokas",
+    "children": [
+      {
+        "slug": "the-big-cheatsheet",
+        "title": "The Big Cheatsheet | Blog summary"
+      },
+      {
+        "slug": "*",
+        "recursive": true,
+        "title": "<file-first-line-no-hash> | Blog post"
+      }
+    ]
   }
 ]
