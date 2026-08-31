@@ -1,3 +1,44 @@
+// marked treats "\\" as a backslash-escaped "\", which mangles LaTeX row breaks
+// (e.g. pmatrix) before KaTeX ever sees them. These extensions make marked pass
+// math spans through untouched, verbatim, for renderMathInElement to parse later.
+function escapeHtml(s) {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+function mathPassthroughExtension(name, startChars, regex) {
+  return {
+    name,
+    level: "inline",
+    start(src) {
+      return src.indexOf(startChars);
+    },
+    tokenizer(src) {
+      const match = regex.exec(src);
+      if (match) return { type: name, raw: match[0], text: match[0] };
+    },
+    renderer(token) {
+      return escapeHtml(token.text);
+    },
+  };
+}
+
+marked.use({
+  extensions: [
+    mathPassthroughExtension("mathDisplayDollar", "$$", /^\$\$([\s\S]+?)\$\$/),
+    mathPassthroughExtension("mathParen", "\\(", /^\\\(([\s\S]+?)\\\)/),
+    mathPassthroughExtension("mathBracket", "\\[", /^\\\[([\s\S]+?)\\\]/),
+    mathPassthroughExtension("mathInlineDollar", "$", /^\$([^$\n]+?)\$/),
+  ],
+});
+
+// KaTeX has no built-in "physics" package, so its bra-ket macros are defined manually.
+const KATEX_MACROS = {
+  "\\bra": "\\left\\langle #1\\right|",
+  "\\ket": "\\left|#1\\right\\rangle",
+  "\\braket": "\\left\\langle #1\\middle| #2\\right\\rangle",
+  "\\ketbra": "\\left|#1\\right\\rangle\\!\\left\\langle #2\\right|",
+};
+
 const pageMap = {}; // slug -> { title, navLabel, fetchPath, parentSlug }
 const topLevelPages = []; // [{ slug, navLabel }]
 const childrenOrder = {}; // parentSlug -> [childSlug, ...] in declared/discovered order
@@ -127,6 +168,7 @@ async function loadPage(slug) {
       { left: "\\(", right: "\\)", display: false },
       { left: "\\[", right: "\\]", display: true },
     ],
+    macros: KATEX_MACROS,
     throwOnError: false,
   });
 

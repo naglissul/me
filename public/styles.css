@@ -293,6 +293,11 @@ section {
     overflow: hidden;
 }
 
+/* KaTeX matrices default to 0.5em column padding on each side; tighten it. */
+#content .katex .arraycolsep {
+    width: 0.2em !important;
+}
+
 #content img {
     max-width: 100%;
     height: auto;
