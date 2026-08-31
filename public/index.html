@@ -1,19 +1,19 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Matematikos BUP patogiai | pagalprograma.lt</title>
+        <title>Naglis Šuliokas</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <meta
             name="description"
-            content="Matematikos BUP informacija, turinys, pasikeitimų sekimas"
+            content="Naglis Šuliokas portfolio and quantum computing blog"
         />
         <meta
             name="keywords"
-            content="Bendroji ugdymo programa, matematika, BUP, formulynas"
+            content="Quantum computing, portfolio, blog, computer science, student, CV"
         />
-        <meta name="author" content="simtukas.lt" />
+        <meta name="author" content="naglissul.me" />
 
         <link rel="stylesheet" href="styles.css" />
         <link
@@ -30,18 +30,13 @@
         ></script>
         <script src="https://cdn.jsdelivr.net/npm/marked@14/lib/marked.umd.js"></script>
         <script defer src="script.js"></script>
-        <script
-            defer
-            src="https://analitika.simtukas.lt/script.js"
-            data-website-id="11465ce9-8a7b-4a8d-ba91-e20df6c98213"
-        ></script>
     </head>
 
     <body>
         <header>
             <div class="header-inner">
                 <a href="/" class="site-title"
-                    >pagalprograma.lt <sub>by Šimtukas</sub></a
+                    >naglissul.me</a
                 >
                 <nav id="nav"></nav>
                 <button id="menu-toggle" aria-label="Meniu">&#9776;</button>
@@ -50,21 +45,25 @@
 
         <div id="drawer">
             <nav id="drawer-nav"></nav>
+            <div id="drawer-blog-section" hidden>
+                <nav id="drawer-blog-nav"></nav>
+            </div>
         </div>
         <div id="drawer-overlay"></div>
 
         <main>
+            <aside id="blog-aside" hidden>
+                <nav id="blog-aside-nav"></nav>
+            </aside>
             <section>
                 <div id="content"></div>
+                <nav id="post-nav-bottom" class="post-nav"></nav>
             </section>
         </main>
 
         <footer>
-            Iškepė Naglis @ Šimtukas tech (<a href="mailto:tech@simtukas.lt"
-                >tech@simtukas.lt</a
-            >). Prisidėk:
-            <a href="https://github.com/skafis-edtech/pagal-programa">GitHub</a
-            >. Paskutinį kartą keista: <span id="last-updated">2026-06-24</span>
+            Code on <a href="https://github.com/skafis-edtech/pagal-programa">GitHub</a
+            >.
         </footer>
     </body>
 </html>

@@ -1,4 +1,4 @@
-# Get that PhD!
+# Blog: Get that PhD!
 
 **The aim** of this blog: get into a PhD program of experimental QC without not abandonning other activities.
 
@@ -6,4 +6,4 @@
 
 Created at: 2026-08-22
 
-Last updated at: 2026-08-29
+Last updated at: 2026-08-31

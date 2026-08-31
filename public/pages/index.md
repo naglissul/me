@@ -14,7 +14,7 @@ My aim is to
 
 I organize monthly student meet-ups, to do 30 minute mini lectures on topics from various fields - mathematics, computer science, biology, chemistry, medicine, literature etc. Consider joining! We are open to everyone (as long as you are somewhat following the scientific paradigm in your presentation). Read more here: [thescienceguild.org](https://www.thescienceguild.org).
 
-## "Get that PhD" blog
+## Blog: Get that PhD!
 
 I want to get into a PhD program for experimental quantum computing. However, my academic and work background mostly goes around computer science, so I need to catch up a lot. But I still want to keep up with all the other activities. Long story short - there's a lot of things going on and it's hard to keep track of everything. That's why I am making this blog. You can read it [here](qc-blog).
 
@@ -63,4 +63,4 @@ performance analysis on various molecules](virtualibiblioteka.vu.lt/permalink/37
 
 Created at: 2026-08-22
 
-Last updated at: 2026-08-22
+Last updated at: 2026-08-31

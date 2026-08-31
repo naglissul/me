@@ -12,8 +12,7 @@
       },
       {
         "slug": "*",
-        "recursive": true,
-        "title": "<file-first-line-no-hash> | Blog post"
+        "title": "<file-first-line> | Blog post"
       }
     ]
   }
