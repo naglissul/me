@@ -48,7 +48,34 @@ Axiom 4. If $s(x) = z$ and $s(y) = z$ then $x=y$.
 
 Axiom 5. Any property belonging to $0$ and to $s(n)$ has also that property belong to all numbers (the mentioned induction proof).
 
-## 
+## Basic types and Lean syntax of types
+
+A short explanation about types. From lambda calculus we have, for example,
+- $\lambda f.\lambda a. \lambda b. fba$
+- or in short $\lambda fab.fba$.
+
+Now we add type for each argument and for the return value. It is done by usign implication arrows:
+- $x_1 \rightarrow x_2 \rightarrow x_3 \rightarrow f(x_1, x_2, x_3)$.
+
+In Lean that would be
+
+```lean
+def C : (α → β → γ) → β → α → γ :=
+  fun f a b ↦ f b a
+```
+where:
+- first argument type is `α → β → γ`,
+- second argument type is `β`,
+- third argument type is `α`,
+- return type is `γ`.
+
+## Lean proofs of basic number properties
+
+...
+
+## Attachements
+
+For Lean setup (and learning) would recommend just cloning this repo: https://github.com/lean-forward/logical_verification_2024
 
 ## References
 
@@ -57,7 +84,6 @@ Structural induction tutorial: https://eng.libretexts.org/Bookshelves/Computer_S
 PFPL book: `Harper, R. (2012). Practical foundations for programming languages (Vol. 2). New York, New York: Cambridge University Press.`
 
 Simplified version of Peano axioms: https://mathshistory.st-andrews.ac.uk/SH/peano_sh.pdf
-
 
 Created at: 2026-08-31
 
