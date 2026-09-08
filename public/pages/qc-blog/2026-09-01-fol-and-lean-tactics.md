@@ -1,4 +1,4 @@
-# FOL and Lean tactics
+# (WIP) FOL and Lean tactics
 
 In this post we will prove validity of $\exists x.(p(x) \lor q(x)) \leftrightarrow ((\exists x.p(x)) \lor (\exists x.q(x)))$ usin Lean tactics.
 

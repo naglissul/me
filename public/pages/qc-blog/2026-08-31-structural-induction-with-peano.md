@@ -1,4 +1,4 @@
-# Structural induction with Peano axioms
+# (WIP) Structural induction with Peano axioms
 
 Proof asistants like Coq or Lean provides mathematicians with a way to verify mathematical proofs. Since it's all on a computer, it must be precise and built from ground up, the way programming is. In this post we will look at recursive sets and structural induction proofs through an example of natural numbers and their basic properties.
 
