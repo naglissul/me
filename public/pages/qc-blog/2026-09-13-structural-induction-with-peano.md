@@ -54,7 +54,7 @@ A short explanation about types. From lambda calculus we have, for example,
 - $\lambda f.\lambda a. \lambda b. fba$
 - or in short $\lambda fab.fba$.
 
-Now we add type for each argument and for the return value. It is done by usign implication arrows:
+Now we add type for each argument and for the return value. It is done by using implication arrows:
 - $x_1 \rightarrow x_2 \rightarrow x_3 \rightarrow f(x_1, x_2, x_3)$.
 
 In Lean that would be
@@ -180,7 +180,7 @@ The simplification tactic "throws all stuff" that Lean has, trying to simplify t
 
 And this is it for this introductiory post about proof assistant basics.
 
-## Attachements
+## Attachments
 
 For Lean setup (and learning) would recommend just cloning this repo: https://github.com/lean-forward/logical_verification_2024
 
