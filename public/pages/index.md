@@ -1,8 +1,9 @@
 # Naglis Šuliokas
 
 - CTO and co-owner @ [Šimtukas](https://www.simtukas.lt)
-- Master Computer Science student @ [VU/UvA](https://www.uva.nl/shared-content/programmas/en/masters/computer-science/computer-science.html)
+- Author of [Pirmasis sniegas](https://www.audriusraso.lt) (The First Snow)
 - [The Science Guild](https://www.thescienceguild.org)'s main organizer
+- Master Computer Science student @ [VU/UvA](https://www.uva.nl/shared-content/programmas/en/masters/computer-science/computer-science.html)
 - Creator and maintainer of [vbesort.lt](https://www.vbesort.lt)
 
 My aim is to
