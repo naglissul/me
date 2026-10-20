@@ -5,7 +5,7 @@ In the context of Logical Verification master course at Vrije Universiteit, let'
 - example of definition and proof of Ackermann function and Star construct,
 - Tarski and Russel universe differences (Tarski used in class, Russel used in Lean).
 
-For introduction into structural induction and Lean proofs see [this post](/qc-blog/2026-09-13-structural-induction-with-peano).
+For introduction into structural induction and Lean proofs see [this post](/2026-09-13-structural-induction-with-peano).
 
 ## Recursor and Ackermann function
 
