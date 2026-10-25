@@ -1,3 +1,0 @@
-# QIT midterm cheatsheet
-
-...
