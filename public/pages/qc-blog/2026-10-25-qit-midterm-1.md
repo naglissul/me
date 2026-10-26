@@ -41,7 +41,7 @@ This essentially captures all classical probability logic with addition of quant
 
 **Example**
 
-$\rho_A = frac12 \bra0\ket0 + \frac12 \bra+\ket+$.
+$\rho_A = \frac12 \ket0\bra0 + \frac12 \ket+\bra+$.
 
 One of many purifications (by wikipedia's definition) is
 
@@ -52,9 +52,12 @@ We can check.
 $Tr_B (\rho_{AB}) = \sum_i (I \otimes \bra i) \rho_{AB} (I \otimes \ket i)$ (let's pick computational basis).
 
 $Tr_B[\ket\psi\bra\psi_{AB}] = \sum_i (I \otimes \bra i) \ket\psi\bra\psi (I \otimes \ket i)$
+
 $= (I \otimes \bra 0) \ket\psi\bra\psi (I \otimes \ket 0)$
+
 $+ (I \otimes \bra 1) \ket\psi\bra\psi (I \otimes \ket 1)$
-$= frac12 \bra0\ket0 + \frac12 \bra+\ket+$.
+
+$= \frac12 \ket0\bra0 + \frac12 \ket+\bra+$.
 
 ## Entangled states
 
@@ -92,6 +95,7 @@ For the usecase example see Ex14 (b) solution in [this QC chapter 1 post attache
 **Trace distance**:
 
 $T(\rho, \sigma) := \frac12 ||\rho - \sigma||_1$,
+
 where $||M||_1$ is sum of singular values, for hermitian operator sum of absolute values of eigenvalues or $Tr[\sqrt{M^\dagger M}]$.
 
 **Fidelity**
@@ -113,3 +117,7 @@ QIT lecture notes: `Walter, M., & Ozols, M. (2022). Lectures notes on quantum in
 (this is APA from Google Scholar, but the notes used in this post are a little updated - last compiled 25 August 2025)
 
 Purification: https://en.wikipedia.org/wiki/Quantum_state_purification
+
+Created at: 2026-10-25
+
+Last updated at: 2026-10-25
