@@ -1,6 +1,6 @@
 # QIT midterm recap: states
 
-Quantum Information Theory course at UvA this year has a midterm with allowed handwritten double-sided A4 cheatsheet. So I'll take my chances. Also, that is quite a nice way to review the first 7 lectures. Reader is also encouraged to take a look at the [QC chapter 1 post](/2026-09-08-uva-qc-ch1), since it contains some quite important formal or semi-formal basics that I will try to not repeat here. For better intuition regarding (quantum) information theory basics, reader is also encouraged to take a look at (containing errors) [The Science Guild mini lecture about Holevo bound](https://drive.google.com/file/d/1kAact2i_PEO0S9HMvB_28umF9riLXJYj/view), however, I will repeat here (what I think are) the most important points. Or for intormation theory intuition you can just read the beginning of the original Shannon paper. It's quite good and easily readable. It is probably self explanatory, that this post contents are mostly based on this course lecture notes, that are not publicly accessible (or are they?).
+Quantum Information Theory course at UvA this year has a midterm with allowed handwritten double-sided A4 cheatsheet. So I'll take my chances. Also, that is quite a nice way to review the first 7 lectures. Reader is also encouraged to take a look at the [QC chapter 1 post](/2026-09-08-uva-qc-ch1), since it contains some quite important formal or semi-formal basics that I will try to not repeat here. It is probably self explanatory, that this post contents are mostly based on this course lecture notes, that are not publicly accessible (or are they?).
 
 This is part 1 of 3 for QIT midterm recap. See [part 2 (about channels) here](/2026-10-25-qit-midterm-2) and [part 3 (about information) here](/2026-10-25-qit-midterm-3).
 
@@ -94,6 +94,8 @@ For the usecase example see Ex14 (b) solution in [this QC chapter 1 post attache
 
 **Trace distance**:
 
+_or total variation distance (TVD)_
+
 $T(\rho, \sigma) := \frac12 ||\rho - \sigma||_1$,
 
 where $||M||_1$ is sum of singular values, for hermitian operator sum of absolute values of eigenvalues or $Tr[\sqrt{M^\dagger M}]$.
@@ -120,4 +122,4 @@ Purification: https://en.wikipedia.org/wiki/Quantum_state_purification
 
 Created at: 2026-10-25
 
-Last updated at: 2026-10-25
+Last updated at: 2026-10-26
