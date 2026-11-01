@@ -8,7 +8,7 @@ This post contains a short summary of big O and other asymptotic functions (base
 
 $f(n) \in \mathcal O(g(n))$ is when
 
-$\Exists c. \Exists n_0. n > n_0 \implies$
+$\exists c. \exists n_0. n > n_0 \implies$
 
 $g(n) \leq c \cdot f(n)$.
 
@@ -22,7 +22,7 @@ And also can be defined by the ratio limit going to a constant.
 
 $f(n) \in \Omega(g(n))$ is when
 
-$\Exists c. \Exists n_0. n > n_0 \implies$
+$\exists c. \exists n_0. n > n_0 \implies$
 
 $g(n) \geq c \cdot f(n)$.
 
@@ -34,7 +34,7 @@ _f(n) grows no slower than g(n)._
 
 $f(n) \in \Theta(g(n))$ is when
 
-$\Exists c_1, c_2. \Exists n_0. n > n_0 \implies$
+$\exists c_1, c_2. \exists n_0. n > n_0 \implies$
 
 $c_1 cdot f(n) \leq g(n) \leq c_2 \cdot f(n)$.
 
@@ -48,11 +48,13 @@ That means, is both Big O and Big Omega.
 
 $f(n) \in o(g(n))$ is when
 
-$\Forall c. \Exists n_0. n > n_0 \implies$
+$\forall c. \exists n_0. n > n_0 \implies$
 
 $g(n) < c \cdot f(n)$.
 
 _f(n) grows slower than g(n)._
+
+_f(n) is asymptotically smaller than g(n). (CLRS book)_
 
 That means, is a strict version of Big O, and little o implies Big O. And also can be defined by the ratio limit going to zero.
 
@@ -60,11 +62,13 @@ That means, is a strict version of Big O, and little o implies Big O. And also c
 
 $f(n) \in \omega(g(n))$ is when
 
-$\Forall c. \Exists n_0. n > n_0 \implies$
+$\forall c. \exists n_0. n > n_0 \implies$
 
 $g(n) > c \cdot f(n)$.
 
 _f(n) grows faster than g(n)._
+
+_f(n) is asymptotically larger than g(n). (CLRS book)_
 
 That means, is a strict version of Big Omega, and little omega implies Big Omega. And also can be defined by the ratio limit going to infinity.
 
@@ -123,6 +127,32 @@ Little omega doesn't seem to be used that much, but we could use it in cryptogra
 
 _Brute-forcing a key is $\omega(n^k)$, that is, superpolynomial._
 
+## Limit properties
+
+**Big Theta**
+
+$\lim \frac{f(n)}{g(n)} = c > 0$
+
+$\implies f(n) = \Theta(g(n))$. _(KT book)_
+
+Sufficient, but not neccessary, for example:
+
+$n(2 + \sin n) = \Theta(n)$ but limit doesn't exist.
+
+**Little o**
+
+$\lim \frac{f(n)}{g(n)} = 0$
+
+$\Leftrightarrow f(n) = o(g(n))$.
+
+**Little omega**
+
+$\lim \frac{f(n)}{g(n)} = \infty$
+
+$\Leftrightarrow f(n) = \omega(g(n))$
+
+$\Leftrightarrow g(n) = o(f(n))$.
+
 ## References
 
 p. 50 `CLRS` Introduction to Algorithms, Fourth Edition, by Thomas Cormen, Charles Leiserson, Ronald Rivest and Clifford Stein
@@ -143,4 +173,4 @@ https://learnengineeringforu.blogspot.com/2018/12/analysis-of-algorithms-little-
 
 Created on: 2026-10-31
 
-Last updated on: 2026-10-31
+Last updated on: 2026-11-01
