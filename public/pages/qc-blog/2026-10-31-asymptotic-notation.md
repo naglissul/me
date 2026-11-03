@@ -153,6 +153,20 @@ $\Leftrightarrow f(n) = \omega(g(n))$
 
 $\Leftrightarrow g(n) = o(f(n))$.
 
+**And finally contemplate the images below**
+
+_CLRS p. 62_
+
+![image](/images/clrs-p-62.png)
+
+![image](/images/some-asymptotic.png)
+
+![image](/images/asymp-functions-analytic.png)
+
+![image](/images/asymptotic-limits.png)
+
+![image](/images/asymptotic-limits-graphs.png)
+
 ## References
 
 p. 50 `CLRS` Introduction to Algorithms, Fourth Edition, by Thomas Cormen, Charles Leiserson, Ronald Rivest and Clifford Stein
@@ -173,4 +187,4 @@ https://learnengineeringforu.blogspot.com/2018/12/analysis-of-algorithms-little-
 
 Created on: 2026-10-31
 
-Last updated on: 2026-11-01
+Last updated on: 2026-11-03
