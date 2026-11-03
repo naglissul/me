@@ -1,6 +1,6 @@
 # Asymptotic notation in algorithm complexity
 
-This post contains a short summary of big O and other asymptotic functions (based on the references mentioned on the bottom). This is targeted for DSA II second year CS course students at Vrije Universiteit.
+This post contains a short summary of big O and other asymptotic functions (based on the references mentioned on the bottom). This is targeted for DSA II second year CS course students at Vrije Universiteit (since I am TAing this course).
 
 ## Definitions
 

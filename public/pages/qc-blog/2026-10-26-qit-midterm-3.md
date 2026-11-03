@@ -1,6 +1,6 @@
 # QIT midterm recap: information
 
-This is part 3 of 3 for QIT midterm recap. See [Part 1 (about states) here](/2026-10-25-qit-midterm-1) and [Part 2 (about channels) here](/2026-10-25-qit-midterm-2).
+This is part 3 of 3 for QIT midterm recap. See [Part 1 (about states) here](/qc-blog/2026-10-25-qit-midterm-1) and [Part 2 (about channels) here](/qc-blog/2026-10-25-qit-midterm-2).
 
 For better intuition regarding (quantum) information theory basics, reader is also encouraged to take a look at (containing errors) [The Science Guild mini lecture about Holevo bound](https://drive.google.com/file/d/1kAact2i_PEO0S9HMvB_28umF9riLXJYj/view), however, I will repeat here (what I think are) the most important points. Or for intormation theory intuition you can just read the beginning of the original Shannon's paper. It's quite good and easily readable.
 

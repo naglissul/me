@@ -1,8 +1,8 @@
 # QIT midterm recap: states
 
-Quantum Information Theory course at UvA this year has a midterm with allowed handwritten double-sided A4 cheatsheet. So I'll take my chances. Also, that is quite a nice way to review the first 7 lectures. Reader is also encouraged to take a look at the [QC chapter 1 post](/2026-09-08-uva-qc-ch1), since it contains some quite important formal or semi-formal basics that I will try to not repeat here. It is probably self explanatory, that this post contents are mostly based on this course lecture notes, that are not publicly accessible (or are they?).
+Quantum Information Theory course at UvA this year has a midterm with allowed handwritten double-sided A4 cheatsheet. So I'll take my chances. Also, that is quite a nice way to review the first 7 lectures. Reader is also encouraged to take a look at the [QC chapter 1 post](/qc-blog/2026-09-08-uva-qc-ch1), since it contains some quite important formal or semi-formal basics that I will try to not repeat here. It is probably self explanatory, that this post contents are mostly based on this course lecture notes, that are not publicly accessible (or are they?).
 
-This is part 1 of 3 for QIT midterm recap. See [part 2 (about channels) here](/2026-10-25-qit-midterm-2) and [part 3 (about information) here](/2026-10-25-qit-midterm-3).
+This is part 1 of 3 for QIT midterm recap. See [part 2 (about channels) here](/qc-blog/2026-10-25-qit-midterm-2) and [part 3 (about information) here](/qc-blog/2026-10-25-qit-midterm-3).
 
 And, of course, these 3 posts don't cover all 7 lecture content.
 

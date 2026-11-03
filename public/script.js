@@ -48,6 +48,12 @@ function navLabel(title) {
   return (i === -1 ? title : title.slice(0, i)).trim();
 }
 
+// Pages whose slug starts with "wip" still exist and are reachable by direct
+// URL, but are left out of every nav listing (top nav, aside, drawer, prev/next).
+function isWip(slug) {
+  return slug.startsWith("wip");
+}
+
 async function listMarkdownFiles(dir) {
   const res = await fetch(`/pages/${dir}/`);
   if (!res.ok) return [];
@@ -67,6 +73,8 @@ async function firstLine(fetchPath) {
   return text.split("\n")[0].replace(/^#+\s*/, "").trim();
 }
 
+// parentSlug/urlPath are full URL paths (e.g. "qc-blog/2026-09-08-uva-qc-ch1"),
+// not bare filenames, so a page's folder is always part of its URL.
 async function resolvePages(pages, parentSlug, parentDir) {
   const explicitSlugs = new Set(pages.map((p) => p.slug).filter((s) => s !== "*"));
 
@@ -74,25 +82,31 @@ async function resolvePages(pages, parentSlug, parentDir) {
     if (p.slug === "*") {
       const files = await listMarkdownFiles(parentDir);
       for (const file of files) {
-        const slug = file.replace(/\.md$/, "");
-        if (slug === "index" || explicitSlugs.has(slug) || pageMap[slug]) continue;
+        const bareSlug = file.replace(/\.md$/, "");
+        if (bareSlug === "index" || explicitSlugs.has(bareSlug)) continue;
+        const urlPath = parentDir ? `${parentDir}/${bareSlug}` : bareSlug;
+        if (pageMap[urlPath]) continue;
         const fetchPath = `${parentDir}/${file}`;
         const title = p.title.replace("<file-first-line>", await firstLine(fetchPath));
-        pageMap[slug] = { title, navLabel: navLabel(title), fetchPath, parentSlug };
-        if (parentSlug) (childrenOrder[parentSlug] ??= []).push(slug);
+        pageMap[urlPath] = { title, navLabel: navLabel(title), fetchPath, parentSlug };
+        if (parentSlug && !isWip(bareSlug)) (childrenOrder[parentSlug] ??= []).push(urlPath);
       }
       continue;
     }
 
     const hasChildren = Array.isArray(p.children);
     const dir = parentDir ? `${parentDir}/${p.slug}` : p.slug;
+    const urlPath = dir;
     const fetchPath = hasChildren ? `${dir}/index.md` : `${dir}.md`;
-    pageMap[p.slug] = { title: p.title, navLabel: navLabel(p.title), fetchPath, parentSlug };
+    pageMap[urlPath] = { title: p.title, navLabel: navLabel(p.title), fetchPath, parentSlug };
 
-    if (!parentSlug) topLevelPages.push({ slug: p.slug, navLabel: navLabel(p.title) });
-    else childrenOrder[parentSlug] ??= [];
-    if (parentSlug) childrenOrder[parentSlug].push(p.slug);
-    if (hasChildren) await resolvePages(p.children, p.slug, dir);
+    if (!parentSlug) {
+      if (!isWip(p.slug)) topLevelPages.push({ slug: urlPath, navLabel: navLabel(p.title) });
+    } else {
+      childrenOrder[parentSlug] ??= [];
+      if (!isWip(p.slug)) childrenOrder[parentSlug].push(urlPath);
+    }
+    if (hasChildren) await resolvePages(p.children, urlPath, dir);
   }
 }
 
@@ -121,7 +135,7 @@ function updateBlogNav(slug) {
   const siblings = childrenOrder[parentSlug];
   const linksHtml = siblings
     .map((s) => {
-      const dateMatch = s.match(/^(\d{4}-\d{2}-\d{2})/);
+      const dateMatch = s.split("/").pop().match(/^(\d{4}-\d{2}-\d{2})/);
       return `<a href="/${s}" data-slug="${s}" class="${s === slug ? "active" : ""}"><span class="blog-aside-title">${pageMap[s].navLabel}</span>${dateMatch ? `<span class="blog-aside-date">${dateMatch[1]}</span>` : ""}</a>`;
     })
     .join("");
@@ -131,11 +145,13 @@ function updateBlogNav(slug) {
   document.getElementById("blog-aside-nav").innerHTML = linksHtml;
   document.getElementById("drawer-blog-nav").innerHTML = linksHtml;
 
+  // siblings is newest-first, so a lower index is newer: "next" should move
+  // toward index 0 (newer) and "prev" should move toward the end (older).
   const idx = siblings.indexOf(slug);
   bottomEl.innerHTML =
     idx === -1
       ? ""
-      : postNavButton("prev", siblings[idx - 1]) + postNavButton("next", siblings[idx + 1]);
+      : postNavButton("prev", siblings[idx + 1]) + postNavButton("next", siblings[idx - 1]);
 }
 
 function topAncestorSlug(slug) {

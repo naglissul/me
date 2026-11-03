@@ -7,10 +7,6 @@
     "title": "Blog | Naglis Šuliokas",
     "children": [
       {
-        "slug": "the-big-cheatsheet",
-        "title": "The Big Cheatsheet | Blog summary"
-      },
-      {
         "slug": "*",
         "title": "<file-first-line> | Blog post"
       }
