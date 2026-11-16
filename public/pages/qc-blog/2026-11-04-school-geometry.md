@@ -1,30 +1,50 @@
 # Mokyklos geometrija (I dalis)
 
-Šiame straipsnyje dalinuosi išsamiai aprašyta 12 kl. išplėtinio kurso matematikos BUP dalimi "Geometrija ir matavimai > Tiesės, plokštumos, kampai erdvėje".
+Šiame straipsnyje dalinuosi išsamiai aprašyta 12 kl. išplėtinio kurso matematikos BUP dalimi "Geometrija ir matavimai > Tiesės, plokštumos, kampai erdvėje". Yra keletas netikslumų (jie paminėti), nėra viskas suformalizuota, aksiomos kartais gali atrodyti netiksliai naudojamos, tačiau mokyklos lygiui to sočiai užteks.
 
 ## Neapibrėžtos sąvokos
 
 **Terminai**: taškas, tiesė, plokštuma.
 
+![](/images/2026-11-04-school-geometry/image.png)
+
 **Sąryšiai**: priklausymas (taško tiesei, taško plokštumai, tiesės plokštumai), būvimas tarp (taškas tarp dviejų taškų), lygumas (atkarpų bei kampų). _Kas yra atkarpa? Kas yra kampas?_
+
+![](/images/2026-11-04-school-geometry/image_1.png)
+
+![](/images/2026-11-04-school-geometry/image_2.png)
 
 ## Aksiomos
 
 **Pirmoji aksioma (A1)**. Per bet kuriuos du taškus eina vienintelė tiesė. _(Hilbert I-1)_
 
+![](/images/2026-11-04-school-geometry/image_3.png)
+
 **Antroji aksioma (A2)**. Per bet kuriuos tris taškus, nesančius vienoje tiesėje, eina vienintelė plokštuma. _(Hilbert I-4)_
+
+![](/images/2026-11-04-school-geometry/image_4.png)
 
 **Trečioji aksioma (A3)**. Jei du tiesės taškai priklauso plokštumai, tai ir tiesė priklauso plokštumai. _(Hilbert I-6)_
 
+![](/images/2026-11-04-school-geometry/image_5.png)
+
 **Ketvirtoji aksioma (A4)**. Jei dvi plokštumos turi bendrą tašką, tai jos turi ir bendrą tiesę, kurioje yra visi bendrieji tų plokštumų taškai. _(Hilbert I-7, I-1, I-4, I-6)_
 
+![](/images/2026-11-04-school-geometry/image_6.png)
+
 _Neprograminė aksioma (A5)_. Bet kokia tiesė turi bent du taškus. _(Hilbert I-2)_
+
+![](/images/2026-11-04-school-geometry/image_7.png)
 
 ## Teorema 1
 
 **Per tiesę ir jai nepriklausantį tašką eina vienintelė plokštuma**.
 
+![](/images/2026-11-04-school-geometry/image_8.png)
+
 _Trumpa įrodymo idėja_: paimkime du tiesės taškus bei tašką nesantį tiesėje, ir pagal trijų taškų aksiomą gaukime vienintelę plokštumą.
+
+![](/images/2026-11-04-school-geometry/image_9.png)
 
 _Įrodymas._
 1. Pavadinkime tiesę $m$, tašką $A$.
@@ -37,7 +57,11 @@ _Įrodymas._
 
 **Per dvi susikertančias tieses eina vienintelė plokštuma**.
 
+![](/images/2026-11-04-school-geometry/image_10.png)
+
 _Trumpa įrodymo idėja_: paimkime tašką, kur susikerta tiesės, bei dar po tašką iš tiesių, ir pagal trijų taškų aksiomą gaukime vienintelę plokštumą.
+
+![](/images/2026-11-04-school-geometry/image_11.png)
 
 _Įrodymas._
 1. Pavadinkime susikertančias tieses $m$ ir $n$, susikirtimo tašką $A$.
@@ -51,7 +75,11 @@ _Įrodymas._
 
 **Per dvi lygiagrečias tieses eina vienintelė plokštuma**.
 
+![](/images/2026-11-04-school-geometry/image_12.png)
+
 _Trumpa įrodymo idėja_: paimkime du taškus ant vienos tiesės bei vieną tašką ant kitos tiesės, ir pagal trijų taškų aksiomą gaukime vienintelę plokštumą.
+
+![](/images/2026-11-04-school-geometry/image_13.png)
 
 _Įrodymas._
 1. Pavadinkime tieses $m$ ir $n$, jos neturi bendrų taškų, turi bendrą plokštumą.
@@ -70,6 +98,8 @@ _Įrodymas._
 - lygiagrečios - neturi bendrų taškų, turi bendrą plokštumą,
 - prasilenkiančios - neturi bendrų taškų, neturi bendros plokštumos.
 
+![](/images/2026-11-04-school-geometry/image_15.png)
+
 _Kitų variantų, žinoma, nėra._
 
 **Plokštumos gali sutapti, būti lygiagrečios, susikertančios**:
@@ -77,12 +107,16 @@ _Kitų variantų, žinoma, nėra._
 - lygiagrečios - neturi bendrų taškų,
 - susikertančios - turi bendrą tašką.
 
+![](/images/2026-11-04-school-geometry/image_16.png)
+
 _Kitų variantų, žinoma, nėra._
 
 **Plokštuma ir tiesė gali būti lygiagrečios, tiesė gali kirsti plokštumą, priklausyti plokštumai**:
 - lygiagrečios - neturi bendrų taškų,
 - kerta - turi vieną ir tik vieną bendrą tašką,
 - priklauso plokštumai.
+
+![](/images/2026-11-04-school-geometry/image_17.png)
 
 _Kitų variantų nėra (priklauso plokštumai, kai yra bent du bendri taškai; įrodoma remiantis A3)._
 
@@ -97,47 +131,98 @@ _Kitų variantų nėra (priklauso plokštumai, kai yra bent du bendri taškai; �
 - tiesės ir su ja lygiagrečios plokštumos - atstumas tarp bet kurio tiesės taško ir plokštumos,
 - dviejų lygiagrečių plokštumų - atstumas tarp bet kurio vienos plokštumos taško ir kitos plokštumos.
 
+![](/images/2026-11-04-school-geometry/image_18.png)
+
 _\* Tiesės statmuo - tiesė, kertanti duotąją tiesę stačiu kampu._
 
-_\*\* Plokštumos statmuo - tiesė, kertanti plokštumą, sudaranti statų kampą su visomis plokštumos tiesėmis (įskaitant prasilenkiančias). Požymis - tiesė statmena (ir kertasi su) dviems plokštumos tiesėms. Šio požymio įrodymas žemiau._
+_\*\* Plokštumos statmuo - tiesė, kertanti plokštumą, sudaranti statų kampą su visomis plokštumos tiesėmis (įskaitant prasilenkiančias). Požymis - tiesė statmena (ir kertasi su) dviems besikertančioms plokštumos tiesėms. Šio požymio įrodymas žemiau._
 
 **Kampai tarp**:
 - susikertančių tiesių - mažiausias susidaręs kampas susikirtus,
 - prasilenkiančių tiesių - kampas tarp vienos tiesės ir kitai tiesei lygiagrečia pirmosios kirstinės,
 - tiesės ir plokštumos - jei tiesė yra statmena, kampas tarp tiesės ir bet kurios plokštumos tiesės; jei tiesė nėra statmena (pasviroji), kampas tarp tiesės ir jos projekcijos\* plokštumoje,
-- dviejų plokštumų (**dvisienis kampas**) - ...
+- dviejų plokštumų (**dvisienis kampas**) - kampas tarp atitinkamų plokštumų tiesių, statmenų bendrai plokštumų tiesei.
+
+![](/images/2026-11-04-school-geometry/image_20.png)
 
 _\* Pasvirosios (statmenoji) projekcija plokštumoje - tiesė, einanti per pasvirosios ir plokštumos susikirtimo tašką bei per plokštumos statmens, kertančio pasvirąją, ir plokštumos susikirtimo tašką (nesutampantį su pirmoju tašku)._
 
-## Tiesės statmenumo plokštumai požymis
+## Tiesės statmenumo plokštumai požymis (P1)
 
-(Pakartota.) Jei tiesė statmena dviems plokštumos tiesėms, ji statmena plokštumai.
+_Požymis (pakartota)._ Jei tiesė statmena dviems besikertančioms plokštumos tiesėms, ji statmena plokštumai.
 
-_Įrodymas._
-...
+_Šiam įrodymui naudoju daug prielaidų, visų čia neįvardinu..._
 
-## Tiesės ir plokštumos lygiagretumo požymis
-
-_Požymis._
+![](/images/2026-11-04-school-geometry/image_19.png)
 
 _Įrodymas._
+1. Pavadinkime plokštumą kertančią tiesę $k$, plokštumą $\alpha$, dvi tieses plokštumoje $a$, $b$.
+2. WLOG galime sakyti, kad $a$ ir $b$ susikirtimo taškas sutampa su $k$ ir $\alpha$ bendru tašku - pavadinkime $O$.
+3. WLOG pakanka parodyti, kad bet kokia $\alpha$ tiesė, einanti per $O$, yra statmena $k$ - nubrėžkime ir pavadinkimę tą tiesę $c$.
+4. Nubrėžkime tiesę, kertančią $a$, $b$, $c$ taškuose $B$, $C$, $D$ atitinkamai.
+5. Pažymėkime vienodai nuo $O$ nutolusius $k$ tiesės taškus $A$ ir $A'$.
+6. $\triangle AOB = \triangle A'OB$ bei $\triangle AOC = \triangle A'OC$ pagal dvi kraštines ir kampą tarp jų.
+7. $\triangle ABC = \triangle A'BC$ pagal tris kraštines.
+8. $\triangle ABD = \triangle A'BD$ pagal dvi kraštines ir kampą tarp jų.
+9. $\triangle AOD = \triangle A'OD$ pagal tris kraštines.
+10. $\angle AOD = \angle A'OD$ (9), bei $\angle AOD + \angle A'OD = 180^\circ$ (gretutiniai), todėl $c \perp k$. QED.
+
+![](/images/2026-11-04-school-geometry/image_21.png)
+
+## Tiesės ir plokštumos lygiagretumo požymis (P2)
+
+_Požymis._ Jei tiesė, nepriklausanti plokštumai, yra lygiagreti vienai plokštumos tiesei, tai ji yra lygiagreti plokštumai.
+
+![](/images/2026-11-04-school-geometry/image_22.png)
+
+_Įrodymas._
+1. Pavadinkime plokštumą $\alpha$, plokštumos tiesę $a$, nepriklausančią plokštumai tiesę $k$.
+2. Tarkime, $k$ ir $\alpha$ turi bendrą tašką (prieštaros metodas), nepriklausantį $a$  - pavadinkime $N$.
+3. $k$ ir $a$ sudaro vienintelę plokštumą - pavadinkime $\gamma$ (T3).
+4. $a$ yra vienintelė bendra $\alpha$ ir $\gamma$ tiesė su visais bendrais plokštumų taškais (A4).
+5. $N$ taškas priklauso ir plokštumai $\alpha$ (2) ir plokštumai $\gamma$ (3), bet ne bendrai plokštumų tiesei $a$ (2).
+6. Prieštara tarp 4 ir 5. QED.
+
+_Antras įrodymo būdas._
+
+![](/images/2026-11-04-school-geometry/image_23.png)
+
+## Trijų statmenų abiejų teoremų santrauka
+
+![](/images/2026-11-04-school-geometry/image_24.png)
 
 ## Trijų statmenų teorema
 
-_Teorema._
+_Teorema._ Jei pasvirosios projekcija statmena tiesei plokštumoje, toji tiesė yra statmena ir pasvirajai.
+
+![](/images/2026-11-04-school-geometry/image_25.png)
 
 _Įrodymas._
+1. $PA$ statmena $m$ ($PA$ yra $\alpha$ statmuo ir $m \in \alpha$).
+2. $AB$ statmena $m$ (prielaida).
+3. $A$, $B$, $P$ sudaro vienintelę plokštumą $\beta$ (A2), kurioje yra tiesės $AB$, $AP$, $PB$ (A3).
+4. $m$ statmena plokštumai $\beta$ (P1, 3), todėl ir statmena $PB$. QED.
 
 ## Trijų statmenų teoremai atvirkštinė teorema
 
-_Teorema._
+_Teorema._ Jei pasviroji statmena tiesei plokštumoje, toji tiesė statmena ir pasvirosios projekcijai.
+
+![](/images/2026-11-04-school-geometry/image_26.png)
 
 _Įrodymas._
+1. $PA$ statmena $m$ ($PA$ yra $\alpha$ statmuo ir $m \in \alpha$).
+2. $PB$ statmena $m$ (prielaida).
+3. $A$, $B$, $P$ sudaro vienintelę plokštumą $\beta$ (A2), kurioje yra tiesės $AB$, $AP$, $PB$ (A3).
+4. $m$ statmena plokštumai $\beta$ (P1, 3), todėl ir statmena $AB$. QED.
 
 ## Nepaminėti dalykai, esantys programoje
 
 - Nagrinėjami ir braižomi stereometrijos brėžiniai bei sprendžiami įvairūs uždaviniai.
 - Mokomasi rasti ir pavaizduoti brėžinyje dvisienį kampą.
+
+## Ateičiai
+
+Ateityje bus patikslintas turinys, remiantis daugiau šaltinių, padaroma mini literatūros analizė. Taip pat viskas formalizuojama su Lean.
 
 ## Šaltiniai
 
