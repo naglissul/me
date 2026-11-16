@@ -1,6 +1,7 @@
 [
   { "slug": "index", "title": "Home | Naglis Šuliokas" },
   {"slug": "portfolio", "title": "Portfolio | Naglis Šuliokas"},
+  {"slug": "links", "title": "Links | Naglis Šuliokas"},
   {"slug": "archive", "title": "Archive | Naglis Šuliokas"},
   {
     "slug": "qc-blog",

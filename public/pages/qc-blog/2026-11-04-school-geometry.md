@@ -270,6 +270,6 @@ Apibrėžiama pasviroji plokštumai ir jos statmenoji projekcija plokštumoje.
 Nagrinėjami ir braižomi stereometrijos brėžiniai bei sprendžiami įvairūs uždaviniai.
 ```
 
-Sukurta: 2026-11-04
+Sukurta: 2026-11-16
 
-Atnaujinta: 2026-11-04
+Atnaujinta: 2026-11-16
