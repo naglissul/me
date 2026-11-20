@@ -164,6 +164,48 @@ function topAncestorSlug(slug) {
   return result;
 }
 
+// Every heading (h1-h6 alike) gets a plain sequential id ("1", "2", "3", ...)
+// in document order, so any heading can be linked as "<page-url>#<n>". Each
+// also gets a "#" permalink to that id, GitHub-style (hidden until hover).
+function assignHeadingIds(root) {
+  root.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach((h, i) => {
+    const id = String(i + 1);
+    h.id = id;
+    const anchor = document.createElement("a");
+    anchor.href = `#${id}`;
+    anchor.className = "heading-anchor";
+    anchor.textContent = "#";
+    anchor.setAttribute("aria-label", "Link to this heading");
+    h.prepend(anchor);
+  });
+}
+
+// Images loading after we scroll grow the page and leave the scroll short, so
+// wait for every image in the content to settle before scrolling to a heading.
+function waitForImages(root) {
+  const imgs = [...root.querySelectorAll("img")];
+  return Promise.all(
+    imgs.map(
+      (img) =>
+        img.complete ||
+        new Promise((resolve) => {
+          img.addEventListener("load", resolve, { once: true });
+          img.addEventListener("error", resolve, { once: true });
+        }),
+    ),
+  );
+}
+
+async function scrollToHash(contentEl) {
+  await waitForImages(contentEl);
+  if (!location.hash) {
+    window.scrollTo(0, 0);
+    return;
+  }
+  const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+  if (target) target.scrollIntoView();
+}
+
 async function loadPage(slug) {
   const page = pageMap[slug];
   const fetchPath = page ? page.fetchPath : `${slug}.md`;
@@ -174,6 +216,7 @@ async function loadPage(slug) {
 
   const contentEl = document.getElementById("content");
   contentEl.innerHTML = marked.parse(text);
+  assignHeadingIds(contentEl);
 
   if (page) document.title = page.title;
 
@@ -194,6 +237,7 @@ async function loadPage(slug) {
   });
 
   updateBlogNav(slug);
+  await scrollToHash(contentEl);
 }
 
 function currentSlug() {
