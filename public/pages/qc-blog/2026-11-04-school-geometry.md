@@ -1,6 +1,6 @@
-# Mokyklos geometrija (I dalis)
+# Aksiomatinė mokyklos stereometrija
 
-Šiame straipsnyje dalinuosi išsamiai aprašyta 12 kl. išplėtinio kurso matematikos BUP dalimi "Geometrija ir matavimai > Tiesės, plokštumos, kampai erdvėje". Yra keletas netikslumų (jie paminėti), nėra viskas suformalizuota, aksiomos kartais gali atrodyti netiksliai naudojamos, tačiau mokyklos lygiui to sočiai užteks.
+Šiame straipsnyje dalinuosi išsamiai aprašyta 12 kl. išplėtinio kurso matematikos BUP dalimi "Geometrija ir matavimai > Tiesės, plokštumos, kampai erdvėje". Yra keletas netikslumų (jie paminėti), nėra viskas suformalizuota, aksiomos kartais gali atrodyti netiksliai naudojamos, tačiau mokyklos lygiui to sočiai užteks. Skirta 12 kl. pamokos vedimui [Šimtuke](https://www.simtukas.lt).
 
 ## Neapibrėžtos sąvokos
 
@@ -272,4 +272,4 @@ Nagrinėjami ir braižomi stereometrijos brėžiniai bei sprendžiami įvairūs 
 
 Sukurta: 2026-11-16
 
-Atnaujinta: 2026-11-16
+Atnaujinta: 2026-11-20

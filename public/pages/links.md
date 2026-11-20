@@ -1,5 +1,7 @@
 # Nuorodos
 
+[Integralai 12 kl. ir aritmetinė progresija 11 kl. tiktokas 2026-11-18](/files/2026-11-17-tiktok-a-lot.pdf)
+
 [Aksiomatinė stereometrija 12 kl. tiktokas 2026-11-16](/qc-blog/2026-11-04-school-geometry)
 
 [Trigonometrija 11 kl. tiktokas 2026-10-22](/files/2026-10-22-tiktok-trigonometrija-11.pdf)
