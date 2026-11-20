@@ -67,9 +67,9 @@ Svarbu paminėti: įrodymo neegzistavimas nereiškia, kad teiginys yra klaidinga
 
 Taigi, dabar galime pagaliau žvilgtelti į tikslius aksiomatinių sistemų apibrėžimų ir taikymų pavyzdžius (eikime dabar "nuo dugno").
 
-## Abstrakti algebra (lauko aksiomos)
+## Abstrakti algebra (algebrinio kūno aksiomos)
 
-Realieji skaičiai su daugyba ir sudėtimi yra laukas.
+Realieji skaičiai su daugyba ir sudėtimi yra algebrinis kūnas.
 
 Užduotis: įrodyti, kad $(a+b)^2 = a^2 + 2ab + b^2$.
 
