@@ -117,21 +117,23 @@ Aksiomos (nėra idealiai tikslios, panašios į sekvencinius skaičiavimus):
 2. [IR elim 2] Jei 'B ir C', tai 'C'
 3. [IR įved] Jei 'B' ir 'C', tai 'B ir C'
 4. [ARBA elim] Jei 'A arba B' ir 'jei A, tai C' ir 'jei B, tai C', tai 'C'
-6. [ARBA įved] Jei 'A', tai 'A arba B'
-7. [ARBA įved] Jei 'A', tai 'B arba A'
+6. [ARBA įved 1] Jei 'A', tai 'A arba B'
+7. [ARBA įved 2] Jei 'A', tai 'B arba A'
 ```
 
 Pavyzdys:
-```
+
 Įrodyti, kad jei 'A ir (B ir C)', tai '(A ir B) ir C'.
-1. A ir (B ir C) [prielaida]
-2. A [IR elim 1, 1]
-3. B ir C [IR elim 2, 1]
-4. B [IR elim 1, 3]
-5. C [IR elim 2, 3]
-6. A ir B [IR įved, 2, 4]
-7. (A ir B) ir C [IR įved, 6, 5]
-```
+
+||||
+|-|-|-|
+| 1. | A ir (B ir C) | prielaida |
+| 2. | A | IR elim 1, 1 |
+| 3. | B ir C | IR elim 2, 1 |
+| 4. | B | IR elim 1, 3 |
+| 5. | C | IR elim 2, 3 |
+| 6. | A ir B | IR įved, 2, 4 |
+| 7. | (A ir B) ir C | IR įved, 6, 5 |
 
 ![](/images/2026-11-20-school-deduction/image_7.png)
 
